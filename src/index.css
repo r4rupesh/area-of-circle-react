@@ -9,3 +9,9 @@ body {
  
 }
 
+@media(max-width:420px){
+  body{
+    scale: 0.6;
+  }
+}
+
