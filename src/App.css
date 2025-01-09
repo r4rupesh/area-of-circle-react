@@ -1,0 +1,41 @@
+.title {
+    text-align: center;
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: colorchange 4s infinite alternate, glow 5s infinite ease-in-out;
+}
+
+@keyframes colorchange {
+    0% {
+        background: linear-gradient(0.25turn, #ff0000, #ff6347, #ff4500);
+        -webkit-background-clip: text;
+    }
+    25% {
+        background: linear-gradient(0.25turn, #ffa500, #ffff00, #adff2f);
+        -webkit-background-clip: text;
+    }
+    50% {
+        background: linear-gradient(0.25turn, #32cd32, #008080, #40e0d0);
+        -webkit-background-clip: text;
+    }
+    75% {
+        background: linear-gradient(0.25turn, #1e90ff, #4169e1, #8a2be2);
+        -webkit-background-clip: text;
+    }
+    100% {
+        background: linear-gradient(0.25turn, #8a2be2, #ff00ff, #ff1493);
+        -webkit-background-clip: text;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 1px rgba(255, 0, 0, 0.8), 0 0 1px rgba(255, 0, 0, 0.6);
+    }
+    50% {
+        text-shadow: 0 0 1px rgba(0, 255, 0, 0.8), 0 0 1px rgba(0, 255, 0, 0.6);
+    }
+}
